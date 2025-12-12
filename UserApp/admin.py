@@ -5,3 +5,5 @@ from .models import Profile
 class ProfileAdmin(admin.ModelAdmin):
     model=Profile
     fields=["user", "role"]
+    search_fields = ['user',"role"]
+    
